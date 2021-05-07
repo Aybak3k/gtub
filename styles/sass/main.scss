@@ -23,7 +23,9 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, auto);
     padding: 25px 30px 25px;
-    .logo, .sign-in-up {
+
+    .logo,
+    .sign-in-up {
         display: flex;
         align-items: center;
     }
@@ -32,8 +34,9 @@ nav {
 .sign-in-up {
     display: flex;
     justify-content: right;
+
     a {
-        padding-right:40px;
+        padding-right: 40px;
     }
 }
 
@@ -42,28 +45,32 @@ nav {
     border-bottom: 1px solid $borderColor;
     width: 100%;
     padding: 45px 30px 30px;
+
     h1 {
         font-weight: normal;
-        margin-bottom:20px;
+        margin-bottom: 20px;
         width: 60%;
     }
+
     .hero-text {
         color: #5a5959;
         width: 60%;
     }
+
     .start-upload {
         background: $mainColor;
         color: $txtColor2;
         text-align: center;
-        width:140px;
-        padding:7px;
+        width: 140px;
+        padding: 7px;
         border-radius: 6px;
         display: block;
-        margin:15px 0 15px;
+        margin: 15px 0 15px;
         font-size: .8em;
         font-weight: bold;
     }
-    .have-account{
+
+    .have-account {
         a {
             color: $mainColor;
         }
@@ -71,41 +78,45 @@ nav {
 }
 
 // how-it-works
-section.how-it-works{
+section.how-it-works {
     text-align: right;
     width: 100%;
+
     div.layout-div {
         display: inline-block;
         width: 50%;
         text-align: left;
         padding-top: 30px;
+
         // border: 1px solid hotpink;
         h2 {
             text-transform: capitalize;
             margin-bottom: 10px;
         }
+
         p.sec-title {
             font-size: .9em;
             margin-bottom: 30px;
         }
+
         div.steps {
             p {
                 margin: 20px 0;
                 text-transform: capitalize;
                 display: flex;
                 align-items: center;
+
                 span.icon {
-                    color:$txtColor2;
+                    color: $txtColor2;
                     background: $mainColor;
                     border: 10px solid $mainColor;
                     border-radius: 50%;
                     @include flexCenter();
                     width: 35px;
-                    height:35px;
+                    height: 35px;
                     margin-right: 20px;
                 }
             }
         }
     }
 }
-// i.fa.fa-user-o(aria-hidden='true')
