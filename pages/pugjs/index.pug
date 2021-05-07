@@ -7,7 +7,8 @@ html(lang="en")
         title  GRAPHICTUB
         link(rel="stylesheet", href="styles/main.css")
         link(rel='preconnect' href='https://fonts.gstatic.com')
-        link(href='https://fonts.googleapis.com/css2?family=Lato&display=swap' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css')
     body 
         header 
             nav 
@@ -16,3 +17,17 @@ html(lang="en")
                 .sign-in-up 
                     a(href='./pages/signup.html') Become a Seller
                     a(href='./pages/login.html') Login
+            .hero-box
+                h1 Join the community of passionate artists and earn money with your creations 
+                p.hero-text GraphicTub is an online platform for creatives like photographers, videographers, illustrators and other content creators who are looking for an opportunity to showcase their work and make money while doing it
+                a.start-upload(href='./pages/signup.html') Start Uploading
+                p.have-account Already have an account? #[a(href='./pages/login.html') Sign in]
+
+        section.how-it-works
+            div.layout-div
+                h2 how does it work?
+                p.sec-title Simplest way to earn using your images, videos, & creatives
+                div.steps
+                    p #[span.icon #[i.fa.fa-user-o(aria-hidden='true')]] create your seller account
+                    p #[span.icon #[i.fa.fa-upload(aria-hidden='true')]] upload your work
+                    p #[span.icon #[i.fa.fa-inr(aria-hidden='true')]] start earning!
