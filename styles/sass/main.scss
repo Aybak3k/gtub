@@ -1,0 +1,49 @@
+@import 'vars';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: $txtColor;
+}
+
+a {
+    all:unset
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.graphictub {
+    color: $mainColor;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(207, 195, 195, 0.562);
+    color: $secColor;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 20px;
+    .logo, .sign-in-up {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.sign-in-up {
+    display: flex;
+    justify-content: right;
+    a {
+        padding-right:40px;
+    }
+}
