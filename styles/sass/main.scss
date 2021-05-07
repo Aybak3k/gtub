@@ -50,6 +50,7 @@ nav {
         font-weight: normal;
         margin-bottom: 20px;
         width: 60%;
+        font-size: 2rem;
     }
 
     .hero-text {
@@ -115,8 +116,14 @@ section.how-it-works {
                     width: 35px;
                     height: 35px;
                     margin-right: 20px;
+                    path {
+                        fill:$txtColor2;
+                    }
                 }
             }
         }
     }
 }
+
+// adding responsiviness to home page
+@import 'res_home' 

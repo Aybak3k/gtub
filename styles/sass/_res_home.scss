@@ -1,0 +1,38 @@
+// hero-box
+@mixin heroBoxRes($sW, $tW:60%, $hW:60%, $hFS:2rem) {
+    @media only screen and (max-width: $sW) {
+        .hero-box {
+            .hero-text {
+                width: $tW;
+            }
+
+            h1 {
+                width: $hW;
+                font-size: $hFS;
+            }
+        }
+    }
+}
+
+@include heroBoxRes(769px, 80%, 80%);
+@include heroBoxRes(481px, 100%, 100%, $hFS:1.7rem);
+
+// how-it-works
+@media only screen and (max-width: 481px) {
+    section.how-it-works {
+        text-align: left;
+
+        div.layout-div {
+            padding: 30px;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    section.how-it-works {
+        p.sec-title {
+            width:90%;
+        }
+    }
+}
