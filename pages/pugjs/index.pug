@@ -1,3 +1,5 @@
+include includes/icons
+
 doctype html
 html(lang="en")
     head
@@ -8,7 +10,6 @@ html(lang="en")
         link(rel="stylesheet" href="styles/main.css")
         link(rel='preconnect' href='https://fonts.gstatic.com')
         link(href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap' rel='stylesheet')
-        link(rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css')
     body 
         header 
             nav 
@@ -27,6 +28,6 @@ html(lang="en")
                 h2 how does it work?
                 p.sec-title Simplest way to earn using your images, videos, & creatives
                 div.steps
-                    p #[span.icon #[i.fa.fa-user-o(aria-hidden='true')]] create your seller account
-                    p #[span.icon #[i.fa.fa-upload(aria-hidden='true')]] upload your work
-                    p #[span.icon #[i.fa.fa-inr(aria-hidden='true')]] start earning!
+                    p #[span.icon #[+userIcon()]] create your seller account
+                    p #[span.icon #[+uploadIcon()]] upload your work
+                    p #[span.icon #[+inrIcon()]] start earning!
